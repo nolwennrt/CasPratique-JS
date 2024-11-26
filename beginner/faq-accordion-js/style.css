@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "WorsSans";
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "WorsSans" , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+}
+
+main {
+    width: 40%;
+    margin: 10rem auto;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px hsla(275, 100%, 87%, 0.177) ;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: hsl(292, 42%, 14%);
+    margin-left: 1.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(292, 42%, 14%);
+}
+
+.title {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+
+.questions {
+    cursor: pointer;
+}
+
+.questions-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.questions-title img {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 0.5px solid rgba(201, 201, 201, 0.496);
+}
+
+.attribution {
+    text-align: center;
+}
+
