@@ -18,7 +18,7 @@ main {
   font-weight: 300;
   color: hsl(217, 12%, 63%);
   background-color: hsl(217, 12%, 13%);
-  width: 30%;
+  width: 400px;
   margin: 10rem auto;
   padding: 2rem;
   border-radius: 15px;
@@ -29,6 +29,12 @@ main h1, main h2 {
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 450px) {
+  main {
+    width: 300px;
+    padding: 1rem;
+  }
 }
 main .star {
   width: 50px;
