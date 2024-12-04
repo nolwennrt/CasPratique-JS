@@ -1,1 +1,115 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Manrope";
+  src: url(../assets/fonts/Manrope-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  display: flex;
+  width: 680px;
+  background-color: white;
+  margin: 10rem auto;
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: hsl(212, 23%, 69%);
+  font-weight: 500;
+}
+main h1 {
+  font-size: 19px;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1rem;
+}
+main .name {
+  font-size: 12px;
+}
+main .name .bold {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+main .popup p {
+  font-size: 10px;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+main .img {
+  width: 40%;
+  background-image: url(../assets/images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+main .content {
+  width: 60%;
+  padding: 2rem;
+  position: relative;
+}
+main .content .profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+main .content .profil .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+main .content .profil .name {
+  flex-grow: 1;
+  margin-left: 1rem;
+  line-height: 20px;
+}
+main .content .profil button {
+  background-color: hsl(210, 46%, 95%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+main .content .profil button:hover {
+  background-color: hsl(211, 17%, 52%);
+}
+main .content .profil button:hover img {
+  content: url(../assets/images/icon-share-white.svg);
+}
+main .content .popup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 10px;
+  width: 210px;
+  height: 45px;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  right: -58px;
+  bottom: 100px;
+  box-shadow: 0px 3px 10px hsl(212, 23%, 69%);
+}
+main .content .popup::before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
+}
+main .content .popup img {
+  width: 17px;
+  height: 17px;
+}
+main .content .popup.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
