@@ -66,14 +66,22 @@ main {
                         content: url(../assets/images/icon-share-white.svg);
                     }
                 }
+
+                &.selected {
+                    background-color: $share;
+
+                    img {
+                        content: url(../assets/images/icon-share-white.svg);
+                    }
+                }
             }
         }
 
         .popup {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
+            padding: 0 30px;
             border-radius: 10px;
             width: 210px;
             height: 45px;
@@ -87,6 +95,7 @@ main {
                 content: "";
                 position: absolute;
                 top: 44px;
+                left: 95px;
                 width: 0;
                 height: 0;
                 border-left: 10px solid transparent;
@@ -101,12 +110,11 @@ main {
 
             .sharebtn-popup {
                 display: none;
-            }
-
+            }  
+            
             &.hidden {
                 display: none;
             }
-        
         }
     }
 
@@ -124,6 +132,7 @@ main {
         .content {
             height: 60%;
             width: 100%;
+            padding-bottom: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -136,19 +145,20 @@ main {
                 bottom: 0;
                 width: 100%;
                 height: 70px;
+                padding: 0 2rem;
                 left: 0;
                 border-radius: 0 0 10px 10px;
 
                 .sharebtn-popup {
                     display:block;
                     background-color: $share;
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 30px;
                     margin-left: 90px;
 
                     img {
-                        width: 12px;
-                        height: 12px;
+                        width: 14px;
+                        height: 14px;
                     }
                 }
 
@@ -165,5 +175,20 @@ main {
         width: 300px;
         height: 600px;
     }
+
 }
+
+.attribution {
+    @include text;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+        @include text;
+    }
+}
+
+
 
