@@ -1,0 +1,39 @@
+@mixin card {
+    font-family: $text-font;
+    font-size: 15px;
+    font-weight: 300;
+    color: $text;
+    background-color: $bg;
+    width: 30%;
+    margin: 10rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+
+    h1, h2 {
+        margin-top: 1.5rem;
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+
+@mixin round {
+    width: 50px;
+    height : 50px;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: $lightbg;
+    font-family: $text-font;
+    color: $text;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $direction;
+}

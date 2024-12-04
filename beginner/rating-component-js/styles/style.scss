@@ -1,0 +1,85 @@
+@import "fonts";
+@import "variables" ;
+@import "mixins";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $darkbg;
+}
+
+main {
+    @include card;
+
+    .star {
+        @include round;
+        @include flex(row);
+        justify-content: center;
+    }
+
+    .rating-state {
+        @include flex(row);
+        margin: 1.5rem 0;
+
+        .rate {
+            @include round;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $orange;
+                color: $darkbg;
+            }
+
+            &.active {
+                background-color: white;
+                color: $darkbg;
+            }
+        }
+    }
+
+    .submit {
+        width: 100%;
+        height: 40px;
+        background-color: $orange;
+        font-family: $text-font;
+        font-weight: 700;
+        font-size: 15px;
+        text-align: center;
+        color: $darkbg;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    .thank {
+        @include flex(column);
+        text-align: center;
+
+        .selected {
+            background: $lightbg;
+            padding: 0.5rem 1rem;
+            color: $orange;
+            margin-top: 1.5rem;
+            border-radius: 20px;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+.attribution, a {
+    text-align: center;
+    color: $text;
+    font-family: $text-font;
+    font-size: 12px;
+}

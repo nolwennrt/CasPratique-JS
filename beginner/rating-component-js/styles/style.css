@@ -1,1 +1,118 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Overpass";
+  src: url(../assets/fonts/Overpass-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+main {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(217, 12%, 13%);
+  width: 30%;
+  margin: 10rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+main h1, main h2 {
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+main .star {
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+main .rating-state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 1.5rem 0;
+}
+main .rating-state .rate {
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+main .rating-state .rate:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+main .rating-state .rate.active {
+  background-color: white;
+  color: hsl(216, 12%, 8%);
+}
+main .submit {
+  width: 100%;
+  height: 40px;
+  background-color: hsl(25, 97%, 53%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  color: hsl(216, 12%, 8%);
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+main .submit:hover {
+  background-color: white;
+}
+main .thank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .thank .selected {
+  background: hsl(213, 19%, 18%);
+  padding: 0.5rem 1rem;
+  color: hsl(25, 97%, 53%);
+  margin-top: 1.5rem;
+  border-radius: 20px;
+}
+main .hidden {
+  display: none;
+}
+
+.attribution, a {
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
