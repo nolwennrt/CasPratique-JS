@@ -60,12 +60,23 @@ main .bold {
 main .light {
   opacity: 0.8;
 }
-main .error {
+main .error-para {
   color: hsl(0, 100%, 74%);
-  font-size: 12px;
+  font-size: 10px;
   font-style: italic;
   text-align: end;
   display: none;
+  margin-top: 4px;
+}
+main .error-placeholder::-moz-placeholder {
+  font-family: "PoppinsSB", sans-serif;
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
+}
+main .error-placeholder::placeholder {
+  font-family: "PoppinsSB", sans-serif;
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
 }
 @media screen and (max-width: 767px) {
   main {
@@ -113,6 +124,7 @@ main .error {
   align-items: center;
   border: 1px solid rgb(208, 208, 208);
   border-radius: 5px;
+  padding: 0 1.5rem;
 }
 .signup .signup-form .input-form .input-group:focus-within {
   border: 1px solid hsl(249, 10%, 26%);
@@ -121,7 +133,6 @@ main .error {
   height: 100%;
   border: none;
   width: 100%;
-  padding: 1.5rem;
   outline: none;
   border-radius: 5px;
 }
@@ -132,6 +143,9 @@ main .error {
 .signup .signup-form .input-form .input-group input::placeholder {
   font-family: "PoppinsSB", sans-serif;
   font-size: 12px;
+}
+.signup .signup-form .input-form .input-group .error {
+  display: none;
 }
 .signup .signup-form button {
   height: 50px;
