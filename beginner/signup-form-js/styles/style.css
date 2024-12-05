@@ -82,6 +82,7 @@ main .error-placeholder::placeholder {
   main {
     flex-direction: column;
     width: 90%;
+    height: 100vh;
     justify-content: center;
   }
 }

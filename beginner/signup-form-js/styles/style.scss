@@ -25,6 +25,7 @@ main {
     @media screen and (max-width : 767px) {
         flex-direction: column;
         width: 90%;
+        height: 100vh;
         justify-content: center;
     }
 }
