@@ -22,17 +22,13 @@ btn.addEventListener("click", (e) => {
         let container = input.parentElement;
         const para = container.nextElementSibling;
 
-        if (!para.dataset.originalText) {
-            para.dataset.originalText = para.textContent; 
-        }
-
         if (input.value === "") {
             e.preventDefault();
-            showError(input, error, container, para, para.dataset.originalText)
             input.classList.remove("error-placeholder");
             if (input.getAttribute("placeholder") === "email@example.com") {
                 input.setAttribute("placeholder", "Email Address")
             }
+            showError(input, error, container, para, `${input.placeholder} cannot be empty`)
         } else if (!input.checkValidity()) {
             e.preventDefault();
             showError(input, error, container, para, "Looks like this is note an email")
