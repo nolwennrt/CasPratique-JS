@@ -184,4 +184,55 @@ main .error-placeholder::placeholder {
     width: 100%;
     margin-top: 5rem;
   }
+}
+
+footer, a {
+  font-family: "PoppinsReg", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer h1, a h1 {
+  font-family: "PoppinsBold", sans-serif;
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 470px) {
+  footer h1, a h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer h1, a h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+footer .bold, a .bold {
+  font-family: "PoppinsSB", sans-serif;
+}
+footer .light, a .light {
+  opacity: 0.8;
+}
+footer .error-para, a .error-para {
+  color: hsl(0, 100%, 74%);
+  font-size: 10px;
+  font-style: italic;
+  text-align: end;
+  display: none;
+  margin-top: 4px;
+}
+footer .error-placeholder::-moz-placeholder, a .error-placeholder::-moz-placeholder {
+  font-family: "PoppinsSB", sans-serif;
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
+}
+footer .error-placeholder::placeholder, a .error-placeholder::placeholder {
+  font-family: "PoppinsSB", sans-serif;
+  font-size: 12px;
+  color: hsl(0, 100%, 74%);
 }/*# sourceMappingURL=style.css.map */

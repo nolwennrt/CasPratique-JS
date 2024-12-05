@@ -69,3 +69,10 @@ main {
         margin-top: 5rem;
     }
 }
+
+footer, a {
+    @include text;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+}
