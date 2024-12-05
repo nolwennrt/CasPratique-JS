@@ -20,13 +20,16 @@
   margin: 0;
 }
 
-main {
+body {
   background-color: hsl(0, 100%, 74%);
   background-image: url(../assets/images/bg-intro-desktop.png);
-  width: 100%;
+}
+
+main {
+  width: 80%;
   height: 100vh;
   display: flex;
-  padding: 0 10rem;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   font-family: "PoppinsReg", sans-serif;
@@ -38,6 +41,18 @@ main h1 {
   font-size: 50px;
   line-height: 55px;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 470px) {
+  main h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 main .bold {
   font-family: "PoppinsSB", sans-serif;
@@ -52,9 +67,22 @@ main .error {
   text-align: end;
   display: none;
 }
+@media screen and (max-width: 767px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+  }
+}
 
 .text {
-  width: 50%;
+  width: 45%;
+}
+@media screen and (max-width: 767px) {
+  .text {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .signup {
@@ -130,4 +158,15 @@ main .error {
 }
 .signup .signup-form .terms .red {
   color: hsl(0, 100%, 74%);
+}
+@media screen and (max-width: 425px) {
+  .signup .signup-form {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .signup {
+    width: 100%;
+    margin-top: 5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

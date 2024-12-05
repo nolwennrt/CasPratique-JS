@@ -8,25 +8,35 @@
     margin: 0;
 }
 
-// body {
-//     // background-color: hsl(248, 32%, 49%);
-//     // font-family: $text ;
-// }
-
-main {
+body {
     background-color: $error;
     background-image: url(../assets/images/bg-intro-desktop.png);
-    width: 100%;
+}
+
+main {
+    width: 80%;
     height: 100vh;
     display: flex;
-    padding: 0 10rem;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     @include text;
+
+    @media screen and (max-width : 767px) {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
 }
 
+
 .text {
-    width: 50%;
+    width: 45%;
+
+    @media screen and (max-width : 767px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .signup {
@@ -47,5 +57,14 @@ main {
         margin-top: 2rem;
         box-shadow: 0 7px 0 rgba(0, 0, 0, 0.22);
         @include input;
+
+        @media screen and (max-width : 425px) {
+            padding: 2rem 1rem;
+        }
+    }
+
+    @media screen and (max-width : 767px) {
+        width: 100%;
+        margin-top: 5rem;
     }
 }
