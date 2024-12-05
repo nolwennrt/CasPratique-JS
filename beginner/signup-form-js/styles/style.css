@@ -1,1 +1,133 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "PoppinsReg";
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "PoppinsSB";
+  src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "PoppinsEB";
+  src: url(../assets/fonts/Poppins-ExtraBold.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../assets/images/bg-intro-desktop.png);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 0 10rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "PoppinsReg", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+main h1 {
+  font-family: "PoppinsBold", sans-serif;
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 2rem;
+}
+main .bold {
+  font-family: "PoppinsSB", sans-serif;
+}
+main .light {
+  opacity: 0.8;
+}
+main .error {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  font-style: italic;
+  text-align: end;
+  display: none;
+}
+
+.text {
+  width: 50%;
+}
+
+.signup {
+  width: 45%;
+}
+.signup .signup-header {
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.22);
+}
+.signup .signup-form {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.22);
+}
+.signup .signup-form .input-form {
+  margin-bottom: 1rem;
+}
+.signup .signup-form .input-form .input-group {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 5px;
+}
+.signup .signup-form .input-form .input-group:focus-within {
+  border: 1px solid hsl(249, 10%, 26%);
+}
+.signup .signup-form .input-form .input-group input {
+  height: 100%;
+  border: none;
+  width: 100%;
+  padding: 1.5rem;
+  outline: none;
+  border-radius: 5px;
+}
+.signup .signup-form .input-form .input-group input::-moz-placeholder {
+  font-family: "PoppinsSB", sans-serif;
+  font-size: 12px;
+}
+.signup .signup-form .input-form .input-group input::placeholder {
+  font-family: "PoppinsSB", sans-serif;
+  font-size: 12px;
+}
+.signup .signup-form button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 hsl(154, 59%, 42%);
+  font-family: "PoppinsSB", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.signup .signup-form button:hover {
+  background-color: hsl(154, 72%, 62%);
+  box-shadow: 0 3px 0 hsl(154, 59%, 51%);
+}
+.signup .signup-form .terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  text-align: center;
+  font-family: "PoppinsSB", sans-serif;
+}
+.signup .signup-form .terms .red {
+  color: hsl(0, 100%, 74%);
+}/*# sourceMappingURL=style.css.map */

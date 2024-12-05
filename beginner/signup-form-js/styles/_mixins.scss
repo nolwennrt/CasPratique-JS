@@ -1,0 +1,90 @@
+@mixin text {
+    font-family: $text;
+    color: white;
+    font-size: 16px;
+
+    h1 {
+        font-family: $title;
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 2rem;
+    }
+
+
+    .bold {font-family: $accent;}
+
+    .light {opacity: 0.8;}
+
+    .error {
+        color: $error;
+        font-size: 12px;
+        font-style: italic;
+        text-align: end;
+        display: none;
+    }
+}
+
+@mixin input {
+
+    .input-form {
+        margin-bottom: 1rem;
+        .input-group {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgb(208, 208, 208);
+            border-radius: 5px;
+
+            &:focus-within {
+                border: 1px solid $focus;
+            }
+    
+            input {
+                height: 100%;
+                border: none;
+                width: 100%;
+                padding: 1.5rem;
+                outline: none;
+                border-radius: 5px;
+    
+                &::placeholder {
+                    font-family: $accent;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    button {
+        height: 50px;
+        width: 100%;
+        border: none;
+        background-color: $button;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow:0 3px 0 hsl(154, 59%, 42%);
+        font-family: $accent;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 1rem;
+
+        &:hover {
+            background-color: hsl(154, 72%, 62%);
+            box-shadow:0 3px 0 hsl(154, 59%, 51%);
+        }
+    }
+
+    .terms {
+        color: $placeholder;
+        font-size: 10px;
+        text-align: center;
+        font-family: $accent;
+
+        .red {
+            color: $error;
+        }
+    }
+
+}
