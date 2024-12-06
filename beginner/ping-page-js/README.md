@@ -1,0 +1,1 @@
+To visit Website : https://nolwennrt.github.io/CasPratiques-JS/beginner/ping-page-js
