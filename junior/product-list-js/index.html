@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+
+
+<body>
+
+
+  <div class="central-box">
+
+<!-- Product Part -->
+
+    <div class="products-container"></div>
+
+                        <!-- Cart part -->
+
+    <div class="container-cart">
+
+      <div class="quantity-total">
+        <h2>Your Cart (0)</h2>
+      </div>
+
+      <!-- Modele, dupliqué en JS -->
+
+      <div class="article-total">
+        <div>
+        <p>Nom du produit <br> 
+        <span class="quantite-produit">Quantité</span><span class="prix-unitaire">Prix</span><span class="prix-produit">Prix total</span></p>
+        </div>
+        <div>
+        <img class="retrait-produit" src="ressources/images/icon-remove-item.svg" alt="">
+        </div>
+      </div>
+      <hr>
+
+      <!-- Partie total-->
+
+      <div class="prix-final">
+        <span>Order Total</span><span class="prix-total">$0</span>
+      </div>
+
+      <div class="carbon-part">
+        <img src="ressources/images/icon-carbon-neutral.svg" alt=""><p>This is a <span>carbon-neutral </span>delivery</p>
+      </div>
+
+      <div class="confirmation">
+        Confirm Order
+      </div>
+      
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Nolwenn</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "RedHatTextRegular";
+    src: url("assets/fonts/static/RedHatText-Regular.ttf");
+}
+@font-face {
+    font-family: "RedHatTextBold";
+    src: url("assets/fonts/static/RedHatText-Bold.ttf");
+}
+@font-face {
+    font-family: "RedHatTextSemiBold";
+    src: url("assets/fonts/static/RedHatText-SemiBold.ttf");
+}
+
+body {
+    background-color: #F0F0F2;
+}
+
+/* -------------- Box produit ------------- */
+
+.central-box {
+    background-color: hsl(13, 31%, 94%);
+    box-shadow: 0px 10px 20px rgb(128,128,128);
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 10em 3em 10em;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 70px;
+    border-radius: 2px;
+    height: 100%;
+    font-family: "RedHatTextSemiBold";
+    font-size: 13px;
+}
+
+h1 {
+    margin: 0;
+    font-family: "RedHatTextBold";
+    font-size: 30px;
+}
+
+/* ---------- Card produit -------- */
+
+.products-container {
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.product-img.selected {
+    border: 2px solid #CB5123;
+}
+
+/* --------- Bouton ajouter au panier --------- */
+
+.card-button {
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50px;
+    width: 90px;
+    height: 20px;
+    padding: 5px 20px;
+    top: 185px;
+    left: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+/* -------- Effet au survol ----------- */
+
+.card-button:hover { 
+    color: #CB5123;
+    border: 1px solid #CB5123 ;
+}
+
+.card-button.active {
+    background: #CB5123;
+    border: none;
+    color: white;
+}
+
+.cart-icon.active {
+    display: none ;
+}
+
+.increase.active, .decrease.active {
+    display: block;
+}
+
+.increase, .decrease {
+    width: 7px;
+    height: 7px;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 999px;
+    display: none;
+}
+
+
+
+/* --------- Partie descriptif produits ---------- */
+
+p {
+    margin: 0px;
+    line-height: 1.6;
+}
+
+.light {
+    font-family: "RedHatTextRegular";
+    font-size: 12px;
+    color: gray;
+    margin-top: 25px;
+}
+
+.price {
+    color: #CB5123;
+}
+
+h2 {
+    color: #CB5123;
+    font-size: 25px;
+    font-family: "RedHatTextBold";
+    margin: 0;
+}
+
+.addtocart {
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+}
+
+/* ------------ Partie panier ------------ */
+
+.container-cart {
+    background-color: white;
+    width: 350px;
+    height: fit-content;
+    border-radius: 7px;
+    padding: 30px 30px 30px 30px;
+}
+
+.article-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.retrait-produit {
+    width: 13px;
+    height: 13px;
+    border: 2px solid #CAAFA7;
+    padding: 1px;
+    border-radius: 999px;
+}
+
+.article-total p {
+    line-height: 2;
+    font-size: 14px;
+}
+
+
+.quantite-produit {
+    color: #CB5123;
+}
+
+.prix-unitaire {
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prix-final {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 14px;
+}
+
+.prix-total {
+    color: black;
+    font-size: 20px;
+}
+
+.carbon-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "RedHatTextRegular";
+    background-color: hsl(13, 31%, 94%);
+    border-radius: 7px;
+}
+
+.carbon-part img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.carbon-part span {
+    font-family: "RedHatTextSemiBold";
+}
+
+.carbon-part p {
+    margin: 10px 0;
+}
+
+.confirmation {
+    background-color: #CB5123;
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.attribution {
+    text-align: center;
+}
