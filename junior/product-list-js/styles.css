@@ -22,28 +22,30 @@ body {
     box-shadow: 0px 10px 20px rgb(128,128,128);
     display: flex;
     justify-content: space-between;
-    margin: 3em 10em 3em 10em;
+    margin: 3em auto;
     padding-right: 70px;
     padding-left: 70px;
     padding-top: 70px;
     border-radius: 2px;
     height: 100%;
+    width: fit-content;
     font-family: "RedHatTextSemiBold";
     font-size: 13px;
+    position: relative;
 }
 
 h1 {
     margin: 0;
     font-family: "RedHatTextBold";
     font-size: 30px;
+    position: absolute;
+    top: 70px;
 }
 
 /* ---------- Card produit -------- */
 
 .products-container {
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    margin: 75px 10px 50px 0px;
     display: grid;
     grid-template-columns: 220px 220px 220px;
 }
@@ -56,12 +58,12 @@ h1 {
 }
 
 .product-img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 7px;
 }
 
-.product-img.selected {
+.product-img.active {
     border: 2px solid #CB5123;
 }
 
@@ -75,8 +77,8 @@ h1 {
     width: 90px;
     height: 20px;
     padding: 5px 20px;
-    top: 185px;
-    left: 35px;
+    top: 163px;
+    left: 27px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -136,7 +138,7 @@ p {
 
 h2 {
     color: #CB5123;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "RedHatTextBold";
     margin: 0;
 }
@@ -149,7 +151,7 @@ h2 {
 
 /* ------------ Partie panier ------------ */
 
-.container-cart {
+.cart-container {
     background-color: white;
     width: 350px;
     height: fit-content;
@@ -159,9 +161,19 @@ h2 {
 
 .article-total {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.article {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding: 10px 0;
 }
+
 
 .retrait-produit {
     width: 13px;
@@ -169,6 +181,12 @@ h2 {
     border: 2px solid #CAAFA7;
     padding: 1px;
     border-radius: 999px;
+    cursor: pointer;
+}
+
+.retrait-produit:hover {
+    content : url(assets/images/icon-remove-item-black.svg);
+    border: 2px solid black;
 }
 
 .article-total p {
@@ -202,7 +220,7 @@ h2 {
 }
 
 .carbon-part {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -228,10 +246,13 @@ h2 {
 .confirmation {
     background-color: #CB5123;
     margin-top: 20px;
+    width: 100%;
     padding: 15px;
     color: white;
+    border: none;
     border-radius: 50px;
     text-align: center;
+    display: none;
 }
 
 .attribution {
